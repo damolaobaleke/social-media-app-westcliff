@@ -19,6 +19,16 @@
     }
   }
 
+  $result = queryMySQL("SELECT * FROM voice_notes WHERE recipient='$user'");
+  if ($result->rowCount() > 0) {
+      echo "<h3>Voice Notes</h3><ul>";
+      while ($row = $result->fetch()) {
+          echo "<li>From: {$row['sender']} <audio controls src='{$row['file_path']}'></audio></li>";
+      }
+      echo "</ul>";
+  }
+
+
   if ($view != "")
   {
     if ($view == $user) $name1 = $name2 = "Your";

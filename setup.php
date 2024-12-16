@@ -35,6 +35,17 @@
               'user VARCHAR(16),
               text VARCHAR(4096),
               INDEX(user(6))');
+
+  createTable('voice_notes',
+    'id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY',
+    'sender VARCHAR(16)',
+    'recipient VARCHAR(16)',
+    'file_path VARCHAR(255)',
+    'timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP',
+    'INDEX(sender(6))',
+    'INDEX(recipient(6))'
+  );
+              
 ?>
 
     <br>...done.
