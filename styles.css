@@ -1,7 +1,7 @@
 /* Example 13: styles.css */
 
 * {
-  font-family:verdana,sans-serif;
+  font-family:'Courier New';
   font-size  :14pt;
 }
 
@@ -61,12 +61,16 @@ img {
 }
 
 #logo {
-  font-family:Georgia;
+  font-family:'Courier New';
   font-weight:bold;
-  font-style :italic;
   font-size  :97px;
-  color      :red;
-  }
+  color:rgb(57, 57, 173);
+}
+
+.help-button{
+  background-color: #40d;
+}
+
 
 #robin {
   position          :relative;

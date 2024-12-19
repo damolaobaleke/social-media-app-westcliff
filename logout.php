@@ -4,6 +4,7 @@
   if (isset($_SESSION['user']))
   {
     destroySession();
+    queryMysql("UPDATE members SET online=0 WHERE user='$user'");
     echo "<br><div class='center'>You have been logged out. Please
          <a data-transition='slide'
            href='index.php?r=$randstr'>click here</a>

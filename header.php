@@ -9,9 +9,11 @@ echo <<<_INIT
     <meta name='viewport' content='width=device-width, initial-scale=1'> 
     <link rel='stylesheet' href='jquery.mobile-1.4.5.min.css'>
     <link rel='stylesheet' href='styles.css' type='text/css'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src='javascript.js'></script>
     <script src='jquery-2.2.4.min.js'></script>
     <script src='jquery.mobile-1.4.5.min.js'></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
 _INIT;
 
@@ -29,12 +31,17 @@ _INIT;
   else $loggedin = FALSE;
 
 echo <<<_MAIN
-    <title>Robin's Nest: $userstr</title>
+  <style>
+    
+  </style>
+    <title>Work Social: $userstr</title>
   </head>
   <body>
     <div data-role='page'>
       <div data-role='header'>
-        <div id='logo' class='center'>WorkSocial</div>
+        <div id="" style="color:rgb(57, 57, 173); font-family:'Courier New'; font-size:100px;" class='center'>
+         WorkSocial
+        </div>
         <div class='username'>$userstr</div>
       </div>
       <div data-role='content'>

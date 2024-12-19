@@ -22,6 +22,10 @@
       {
         $_SESSION['user'] = $user;
         $_SESSION['pass'] = $pass;
+
+        //update status with online
+        queryMySQL("UPDATE members SET online=1 WHERE user='$user'");
+
         die("<div class='center'>You are now logged in. Please
              <a data-transition='slide'
                href='members.php?view=$user&r=$randstr'>click here</a>
